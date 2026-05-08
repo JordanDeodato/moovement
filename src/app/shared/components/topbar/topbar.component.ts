@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
       <div class="max-w-7xl mx-auto flex justify-between items-center px-lg py-md">
         <div class="flex items-center gap-md">
           <span class="material-symbols-outlined text-primary text-h2">bolt</span>
-          <h1 class="font-h2 text-h2 font-bold tracking-tighter text-primary">FITQUEST</h1>
+          <h1 class="font-h2 text-h2 font-bold tracking-tighter text-primary">MOOVEMENT</h1>
         </div>
         <div class="flex items-center gap-xs bg-primary/10 px-md py-xs rounded-full border border-primary/20">
           <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>

@@ -1,5 +1,5 @@
 import { Injectable, signal } from '@angular/core';
-import { User, Workout, Achievement, WeekDay } from '../models/fitquest.models';
+import { User, Workout, Achievement, WeekDay } from '../models/moovement.models';
 
 @Injectable({
   providedIn: 'root'

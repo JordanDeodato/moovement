@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ExerciseItemComponent } from '../exercise-item/exercise-item.component';
-import { Workout } from '../../models/fitquest.models';
+import { Workout } from '../../models/moovement.models';
 
 @Component({
     selector: 'app-workout-detail-card',

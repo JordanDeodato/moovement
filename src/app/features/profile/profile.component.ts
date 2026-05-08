@@ -4,8 +4,8 @@ import { TopbarComponent } from '../../shared/components/topbar/topbar.component
 import { BottomNavbarComponent } from '../../shared/components/bottom-navbar/bottom-navbar.component';
 import { ProgressBarComponent } from '../../shared/components/progress-bar/progress-bar.component';
 import { AchievementBadgeComponent } from '../../shared/components/achievement-badge/achievement-badge.component';
-import { MoovementDataService } from '../../shared/services/fitquest-data.service';
-import { Achievement, User } from '../../shared/models/fitquest.models';
+import { MoovementDataService } from '../../shared/services/moovement-data.service';
+import { Achievement, User } from '../../shared/models/moovement.models';
 
 @Component({
   selector: 'app-profile',

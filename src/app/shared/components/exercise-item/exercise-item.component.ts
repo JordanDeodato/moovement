@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Exercise } from '../../models/fitquest.models';
+import { Exercise } from '../../models/moovement.models';
 
 @Component({
   selector: 'app-exercise-item',

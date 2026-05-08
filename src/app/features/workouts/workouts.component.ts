@@ -5,8 +5,8 @@ import { BottomNavbarComponent } from '../../shared/components/bottom-navbar/bot
 import { FloatingActionButtonComponent } from '../../shared/components/floating-action-button/floating-action-button.component';
 import { DayNavigationComponent } from '../../shared/components/day-navigation/day-navigation.component';
 import { WorkoutDetailCardComponent } from '../../shared/components/workout-detail-card/workout-detail-card.component';
-import { MoovementDataService } from '../../shared/services/fitquest-data.service';
-import { Workout } from '../../shared/models/fitquest.models';
+import { MoovementDataService } from '../../shared/services/moovement-data.service';
+import { Workout } from '../../shared/models/moovement.models';
 
 @Component({
   selector: 'app-workouts',

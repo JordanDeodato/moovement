@@ -2,8 +2,8 @@ import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TopbarComponent } from '../../shared/components/topbar/topbar.component';
 import { BottomNavbarComponent } from '../../shared/components/bottom-navbar/bottom-navbar.component';
-import { MoovementDataService } from '../../shared/services/fitquest-data.service';
-import { User } from '../../shared/models/fitquest.models';
+import { MoovementDataService } from '../../shared/services/moovement-data.service';
+import { User } from '../../shared/models/moovement.models';
 
 interface WeeklyBar {
   label: string;

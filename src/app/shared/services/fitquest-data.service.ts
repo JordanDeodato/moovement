@@ -1,10 +1,10 @@
 import { Injectable, signal } from '@angular/core';
-import { User, Workout, Achievement, WeekDay, Exercise } from '../models/fitquest.models';
+import { User, Workout, Achievement, WeekDay } from '../models/fitquest.models';
 
 @Injectable({
   providedIn: 'root'
 })
-export class FitquestDataService {
+export class MoovementDataService {
   private readonly user = signal<User>({
     id: 'user-1',
     name: 'Lucas',

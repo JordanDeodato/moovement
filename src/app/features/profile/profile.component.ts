@@ -1,10 +1,10 @@
-import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TopbarComponent } from '../../shared/components/topbar/topbar.component';
 import { BottomNavbarComponent } from '../../shared/components/bottom-navbar/bottom-navbar.component';
 import { ProgressBarComponent } from '../../shared/components/progress-bar/progress-bar.component';
 import { AchievementBadgeComponent } from '../../shared/components/achievement-badge/achievement-badge.component';
-import { FitquestDataService } from '../../shared/services/fitquest-data.service';
+import { MoovementDataService } from '../../shared/services/fitquest-data.service';
 import { Achievement, User } from '../../shared/models/fitquest.models';
 
 @Component({
@@ -83,11 +83,13 @@ import { Achievement, User } from '../../shared/models/fitquest.models';
   `
 })
 export class ProfileComponent {
+  private readonly dataService = inject(MoovementDataService);
+
   readonly user = signal<User>({} as User);
   readonly stats = signal({ workouts: 0, duration: '0h 0m', xpTotal: 0 });
   readonly achievements = signal<Achievement[]>([]);
 
-  constructor(private readonly dataService: FitquestDataService) {
+  constructor() {
     this.user.set(this.dataService.getUser());
     this.stats.set(this.dataService.getStats());
     this.achievements.set(this.dataService.getAchievements());

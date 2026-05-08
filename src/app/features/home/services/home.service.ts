@@ -2,11 +2,11 @@ import { Injectable } from '@angular/core';
 import { Achievement } from '../../../shared/models/achievement.model';
 import { Workout } from '../../../shared/models/workout.model';
 import { User } from '../../../shared/models/user.model';
-import { FitquestDataService } from '../../../core/services/fitquest-data.service';
+import { MoovementDataService } from '../../../core/services/moovement-data.service';
 
 @Injectable({ providedIn: 'root' })
 export class HomeService {
-  constructor(private readonly dataService: FitquestDataService) {}
+  constructor(private readonly dataService: MoovementDataService) {}
 
   getUser(): User {
     return this.dataService.getUser();

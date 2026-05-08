@@ -6,7 +6,7 @@ import { Workout } from '../../shared/models/workout.model';
 @Injectable({
   providedIn: 'root'
 })
-export class FitquestDataService {
+export class MoovementDataService {
   getUser(): User {
     return {
       id: 'user-1',

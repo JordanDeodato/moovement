@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TopbarComponent } from '../../shared/components/topbar/topbar.component';
 import { BottomNavbarComponent } from '../../shared/components/bottom-navbar/bottom-navbar.component';
-import { FitquestDataService } from '../../shared/services/fitquest-data.service';
+import { MoovementDataService } from '../../shared/services/fitquest-data.service';
 import { User } from '../../shared/models/fitquest.models';
 
 interface WeeklyBar {
@@ -176,7 +176,7 @@ export class ProgressComponent {
     { label: 'Agachamento', detail: '90 → 100kg', delta: '+10kg' }
   ];
 
-  constructor(private readonly dataService: FitquestDataService) {
+  constructor(private readonly dataService: MoovementDataService) {
     this.user.set(this.dataService.getUser());
   }
 }

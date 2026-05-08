@@ -4,16 +4,20 @@ import { ExerciseItemComponent } from '../exercise-item/exercise-item.component'
 import { Workout } from '../../models/fitquest.models';
 
 @Component({
-  selector: 'app-workout-detail-card',
-  standalone: true,
-  imports: [CommonModule, ExerciseItemComponent],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `
+    selector: 'app-workout-detail-card',
+    standalone: true,
+    imports: [CommonModule, ExerciseItemComponent],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    template: `
     <div class="glass-card rounded-2xl overflow-hidden shadow-2xl">
       <!-- Card Header -->
       <div class="relative h-48 flex flex-col justify-end p-lg overflow-hidden">
         <div class="absolute inset-0 z-0">
-          <img class="w-full h-full object-cover opacity-40" alt="Workout background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiV8b_DcdzAJWoDQA2pJOmAMBK7Bca5aa8vPO_uBfHsacb3Qqha54mslA981RLndNqvA6lASDUkjt_A_IShwPqjifrCaIE9BPbSqvgact-m6AB-YYt_1OtV5vduuBz2nWb7HvHQ4Y-wGduJyi68k09EzNS3sq7YqO-DMQtjJDyrU47gmkx347HvjfzUOOWaL0qmwKj9Mj2B8aD5o"/>
+            <img
+                class="w-full h-full object-cover opacity-40"
+                alt="Workout background"
+                src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1600&auto=format&fit=crop"
+            />
           <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/60 to-transparent"></div>
         </div>
         <div class="relative z-10 space-y-xs">
@@ -43,17 +47,17 @@ import { Workout } from '../../models/fitquest.models';
       </div>
     </div>
   `,
-  styles: [`
+    styles: [`
     .material-symbols-outlined {
       font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
     }
   `]
 })
 export class WorkoutDetailCardComponent {
-  @Input() workout!: Workout;
-  @Output() startWorkout = new EventEmitter<string>();
+    @Input() workout!: Workout;
+    @Output() startWorkout = new EventEmitter<string>();
 
-  trackByExercise(index: number, exercise: any): string {
-    return exercise.id;
-  }
+    trackByExercise(index: number, exercise: any): string {
+        return exercise.id;
+    }
 }

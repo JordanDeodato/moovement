@@ -5,7 +5,7 @@ import { BottomNavbarComponent } from '../../shared/components/bottom-navbar/bot
 import { FloatingActionButtonComponent } from '../../shared/components/floating-action-button/floating-action-button.component';
 import { DayNavigationComponent } from '../../shared/components/day-navigation/day-navigation.component';
 import { WorkoutDetailCardComponent } from '../../shared/components/workout-detail-card/workout-detail-card.component';
-import { FitquestDataService } from '../../shared/services/fitquest-data.service';
+import { MoovementDataService } from '../../shared/services/fitquest-data.service';
 import { Workout } from '../../shared/models/fitquest.models';
 
 @Component({
@@ -70,7 +70,7 @@ export class WorkoutsComponent {
   readonly currentDayIndex = signal(1); // hoje
   readonly currentDayLabel = signal('Hoje · 11 abr, Qui');
 
-  constructor(private readonly dataService: FitquestDataService) {
+  constructor(private readonly dataService: MoovementDataService) {
     this.user.set(this.dataService.getUser());
     this.workout.set(this.dataService.getCurrentWorkout());
   }

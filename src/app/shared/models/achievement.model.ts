@@ -1,0 +1,6 @@
+export interface Achievement {
+  id: string;
+  title: string;
+  unlocked: boolean;
+  icon: string;
+}

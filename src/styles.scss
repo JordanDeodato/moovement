@@ -1,1 +1,53 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+:root {
+  color-scheme: dark;
+  font-family: 'Lexend', ui-sans-serif, system-ui, sans-serif;
+  --surface: #13121b;
+  --surface-container: #1f1f28;
+  --surface-container-high: #2a2933;
+  --surface-container-highest: #35343e;
+  --background: #13121b;
+  --on-background: #e4e1ee;
+  --primary: #c4c0ff;
+  --primary-container: #8781ff;
+  --secondary: #ffb3b0;
+  --secondary-container: #901822;
+  --tertiary: #ffb785;
+  --on-surface-variant: #c7c4d8;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--on-background);
+}
+
+.glass-card {
+  @apply bg-white/5 border border-white/10 backdrop-blur-xl;
+}
